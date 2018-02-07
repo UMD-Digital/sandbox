@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+/* line 12, ../sass/style.scss */
+.header {
+  height: 40px;
+  color: #E21833;
+}
+
+/* line 16, ../sass/style.scss */
+.sub-header {
+  height: 40px;
+}
+
+/* line 21, ../sass/style.scss */
+.main-content {
+  max-width: 800px;
+}
+/* line 24, ../sass/style.scss */
+.main-content a {
+  font-weight: bold;
+  color: #E21833;
+}
+
+/* line 31, ../sass/style.scss */
+p {
+  color: #666666;
+}
+/* line 34, ../sass/style.scss */
+p a {
+  color: #E21833;
+  text-decoration: none;
+}
+/* line 38, ../sass/style.scss */
+p a:hover, p a:focus {
+  color: #900900;
+}
+
+/* line 46, ../sass/style.scss */
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+/* line 62, ../sass/style.scss */
+.title {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: blue;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* line 76, ../sass/style.scss */
+.box {
+  border: 1px solid #e1e1e1;
+  margin: 1em;
+  padding: 2em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 86, ../sass/style.scss */
+.container {
+  width: 100%;
+}
+
+/* line 90, ../sass/style.scss */
+article[role="main"] {
+  float: left;
+  width: 52.08333%;
+}

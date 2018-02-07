@@ -1,0 +1,118 @@
+// Installation
+// gem install sass
+// sudo gem install sass (Root Permissions)
+// sass -v
+// gem update sass
+
+// 1 Variables
+$control-height: 40px;
+$font-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$color-red: #E21833; // Can be used to define global brand colors
+
+.header { 
+    height: $control-height;
+    color: $color-red;
+}
+.sub-header { 
+    height: $control-height;
+}
+
+// // 2 Basic Nesting
+.main-content {
+	max-width: 800px;
+
+	a {
+		font-weight: bold;
+		color: $color-red;
+	}
+}
+
+// 3 Further Nesting using ampersand “&”
+p {
+	color: #666666; // will change for all paragraphs
+
+	a {
+		color: $color-red;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: #900900;
+		}
+	}
+}
+
+// 4. Importing and Partials
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+body {
+	font-family: $font-main;
+}
+
+// 5. Mixins
+// Example
+@mixin large-text {
+	font: {
+		family: $font-main;
+		size: 55px;
+		weight: bold;
+	}
+
+	color: blue;
+}
+
+.title {
+	@include large-text;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+// Mixin With Variable
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.box {
+	border: 1px solid #e1e1e1;
+	margin: 1em;
+	padding: 2em;
+
+	@include border-radius(10px);
+}
+
+
+// 6. Operators
+.container { 
+    width: 100%; 
+}
+
+article[role="main"]  {
+    float: left;
+    width: 500px / 960px * 100%;
+}
+
+// .sidebar {
+//     float: right;
+//     width: 200px / 960px * 100%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
