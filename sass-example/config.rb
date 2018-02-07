@@ -10,6 +10,9 @@ sass_dir = "sass"
 output_style = :expanded
 # output_style = :expanded or :nested or :compact or :compressed
 
+# Disabled Caching
+asset_cache_buster :none
+
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
